@@ -4,17 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Business card website</title>
+  <title>Шевчук Виталий Геннадьевич | Разработчик веб-приложений</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header">
+    <img class="header__background" src="./img/home.webp" alt="background">
+    <div class="header__background-wrapper"></div>
     <div class="header-top">
-      <span class="logo"></span>
+      <a href="/" class="logo">Виталий&nbsp;Шевчук</a>
       <nav class="navigation">
         <ul class="menu">
           <li class="menu-element">
-            <a class="menu-element__link" href="">Home</a>
+            <a class="menu-element__link active" href="">
+              <i class="fa-solid fa-house-chimney"></i>
+            </a>
           </li>
           <li class="menu-element">
             <a class="menu-element__link" href="">About</a>
@@ -42,8 +49,10 @@
       <div class="switcher">Ru/En</div>
     </div>
     <div class="header-center">
-      <h1 class="name">Шевчук&nbsp;Виталий</h1>
+      <div class="header-center__wrapper">
+        <h1 class="name">Шевчук&nbsp;Виталий</h1>
       <p class="description">Привет! Меня зовут Виталий. Я веб-разработчик, давайте знакомиться!</p>
+      </div>      
     </div>
   </header>
 
