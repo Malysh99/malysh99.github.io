@@ -11,52 +11,62 @@
 </head>
 
 <body>
-  <header class="header">
+  <div class="header-top">
+    <a href="#home" class="link logo block-center">Виталий&nbsp;Шевчук</a>
+    <nav class="navigation">
+      <ul class="menu block-center">
+        <li class="menu-element">
+          <a class="link menu-element__link active" href="#home">
+            <i class="fa-solid fa-house-chimney"></i>
+          </a>
+        </li>
+        <li class="menu-element">
+          <a class="link menu-element__link" href="#about-me">Обо&nbsp;мне</a>
+        </li>
+        <li class="menu-element">
+          <a class="link menu-element__link" href="#achievements">Достижения</a>
+        </li>
+        <li class="menu-element">
+          <a class="link menu-element__link" href="#skills">Навыки</a>
+        </li>
+        <li class="menu-element">
+          <a class="link menu-element__link" href="#work">Работа</a>
+        </li>
+        <li class="menu-element">
+          <a class="link menu-element__link" href="#interests">Интересы</a>
+        </li>
+        <li class="menu-element">
+          <a class="link menu-element__link" href="#books">Книги</a>
+        </li>
+        <li class="menu-element">
+          <a class="link menu-element__link" href="#contact-me">Связаться</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="switcher-container block-center">
+      <div class="switcher-wrapper">
+        <input type="checkbox" id="lang-toggle" checked>
+        <label class="switcher" for="lang-toggle">
+          <span>Ru</span>
+          <span>En</span>
+        </label>
+      </div>
+    </div>
+  </div>
+  <header class="header" id="home">
     <img class="header__background" src="./img/home.webp" alt="background">
     <div class="header__background-wrapper"></div>
-    <div class="header-top">
-      <a href="/" class="logo">Виталий&nbsp;Шевчук</a>
-      <nav class="navigation">
-        <ul class="menu">
-          <li class="menu-element">
-            <a class="menu-element__link active" href="">
-              <i class="fa-solid fa-house-chimney"></i>
-            </a>
-          </li>
-          <li class="menu-element">
-            <a class="menu-element__link" href="">About</a>
-          </li>
-          <li class="menu-element">
-            <a class="menu-element__link" href="">Achievements</a>
-          </li>
-          <li class="menu-element">
-            <a class="menu-element__link" href="">Skills</a>
-          </li>
-          <li class="menu-element">
-            <a class="menu-element__link" href="">Work</a>
-          </li>
-          <li class="menu-element">
-            <a class="menu-element__link" href="">Interests</a>
-          </li>
-          <li class="menu-element">
-            <a class="menu-element__link" href="">Books</a>
-          </li>
-          <li class="menu-element">
-            <a class="menu-element__link" href="">Contact me</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="switcher">Ru/En</div>
-    </div>
+
     <div class="header-center">
       <div class="header-center__wrapper">
         <h1 class="name">Шевчук&nbsp;Виталий</h1>
-      <p class="description">Привет! Меня зовут Виталий. Я веб-разработчик, давайте знакомиться!</p>
-      </div>      
+        <p class="description">Привет! Меня зовут Виталий. Я веб-разработчик, давайте знакомиться!</p>
+      </div>
     </div>
   </header>
 
-  <section class="about-me">
+  <section class="about-me" id="about-me">
     <div class="left">
       <img src="" alt="my photo">
     </div>
@@ -96,7 +106,7 @@
     </div>
   </section>
 
-  <section class="achievements">
+  <section class="achievements" id="achievements">
     <h2 class="second-title">Достижения</h2>
     <ul class="achievements-list">
       <li class="achievements-list__element">Достижения 1</li>
@@ -107,7 +117,7 @@
     </ul>
   </section>
 
-  <section class="skills">
+  <section class="skills" id="skills">
     <h2 class="second-title"></h2>
     <p class="section-description">Все оценки являются субъективными и показывают уровень, который, как по мне,
       необходим для работы.</p>
@@ -150,7 +160,7 @@
 
   </section>
 
-  <section class="work">
+  <section class="work" id="work">
     <h2 class="second-title">Работа</h2>
     <div class="work-wrapper">
       <div class="work-element left">
@@ -360,7 +370,7 @@
 
   </section>
 
-  <section class="interests">
+  <section class="interests" id="interests">
     <h2 class="second-title">Интересы</h2>
 
     <div class="interests-wrapper">
@@ -408,7 +418,7 @@
 
   </section>
 
-  <section class="books">
+  <section class="books" id="books">
     <h2 class="second-title">Прочитанные книги</h2>
     <p class="section-description">Тут указаны не все прочитанные мной книги, а только те книги, которые произвели на
       меня наибольшее впечатление</p>
@@ -421,7 +431,7 @@
     </ul>
   </section>
 
-  <section class="contact-me">
+  <section class="contact-me" id="contact-me">
     <h2 class="second-title">Обратная связь</h2>
     <form action="" class="contact-me__form">
       <div class="input-wrapper">
@@ -445,10 +455,10 @@
   <footer>
     <ul class="socials">
       <li class="socials-element">
-        <a class="socials-element__link" href="">VK</a>
+        <a class="link socials-element__link" href="">VK</a>
       </li>
       <li class="socials-element">
-        <a class="socials-element__link" href="">TG</a>
+        <a class="link socials-element__link" href="">TG</a>
       </li>
     </ul>
     <p class="footer-about">
