@@ -77,55 +77,62 @@ a.link:hover {
 .switcher-container {
   width: 260px;
 }
-.switcher {
+.switcher-wrapper {
   position: relative;
   display: flex;
   align-items: center;
   height: 35px;
   background-color: var(--color-green);
   border-radius: 20px;
-  width: 80px;
+  width: 150px;
   padding: 0 10px;
   cursor: pointer;
   opacity: 0.8;
   transition: opacity 0.3s ease;
 }
-.switcher:hover {
+.switcher-wrapper:hover {
   opacity: 1;
 }
-.switcher::before {
-  content: "";
+.lang-placeholder {
   width: 40px;
-  height: 30px;
+  height: 26px;
   background-color: var(--color-white);
   position: absolute;
-  left: 37px;
+
   border-radius: 20px;
   z-index: 1;
   transition: left 0.3s ease-in-out;
 }
-#lang-toggle:checked + .switcher::before {
-  left: 5px;
+.switcher-wrapper
+  input[type="radio"]:nth-of-type(1):checked
+  ~ .lang-placeholder {
+  left: 12px;
 }
-#lang-toggle:checked + .switcher span:first-child {
-  color: var(--color-green);
+.switcher-wrapper
+  input[type="radio"]:nth-of-type(2):checked
+  ~ .lang-placeholder {
+  left: 55px;
 }
-#lang-toggle:checked + .switcher span:last-child {
-  color: var(--color-white);
+.switcher-wrapper
+  input[type="radio"]:nth-of-type(3):checked
+  ~ .lang-placeholder {
+  left: 99px;
 }
-.switcher span:first-child {
-  color: var(--color-white);
+.switcher-wrapper input[type="radio"] {
+  display: none;
 }
 
-.switcher span {
-  flex: 1 1 50%;
+.switcher-wrapper .switcher {
+  position: relative;
+  flex: 1 1 calc(100% / 3);
   text-align: center;
-  color: var(--color-green);
+  color: var(--color-white);
   transition: color 0.3s ease-in-out;
+  cursor: pointer;
   z-index: 2;
 }
-#lang-toggle {
-  display: none;
+.switcher-wrapper input[type="radio"]:checked + .switcher {
+  color: var(--color-green);
 }
 /* header */
 .header-center {
